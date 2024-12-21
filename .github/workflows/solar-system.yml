@@ -8,8 +8,8 @@ on:
       - 'feature/*'
 
 env:
-  MONGO_URI: ${{ var.MONG_URI }}
-  MONGO_USERNAME: ${{ var.MONGO_USERNAME }}
+  MONGO_URI: ${{ variables.MONG_URI }}
+  MONGO_USERNAME: ${{ variables.MONGO_USERNAME }}
   MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
     
 jobs:
